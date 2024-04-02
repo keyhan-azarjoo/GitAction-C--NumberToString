@@ -244,8 +244,9 @@ namespace NumberToTextConvertorTests
         [Test]
         public void TestConvertor()
         {
+            string[] TNumberWord = { "", " thousand ", " million ", " billion " };
             // Arrange
-            Number_To_Text_Convertor convertor = new Number_To_Text_Convertor();
+            Number_To_Text_Convertor convertor = new Number_To_Text_Convertor(TNumberWord);
 
             // Act
             string result = convertor.Convertor("10");
