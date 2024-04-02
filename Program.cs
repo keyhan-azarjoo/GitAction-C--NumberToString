@@ -3,10 +3,10 @@
 
     class Program
     {
-        static void Main(string[] TNumberWord)
+        static void Main()
         {
             string Number = "";
-            //string[] TNumberWord = { "", " thousand ", " million ", " billion " };
+            string[] TNumberWord = { "", " thousand ", " million ", " billion " };
             string result = "";
             Number_To_Text_Convertor NumConvertor = new Number_To_Text_Convertor(TNumberWord);
             Console.WriteLine("'q' for exit");
