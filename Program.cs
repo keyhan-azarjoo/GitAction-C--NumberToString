@@ -3,10 +3,10 @@
 
     class Program
     {
-        static void Main(string[] TNumberWord)
+        static void Main()
         {
             string Number = "";
-            //string[] TNumberWord = { "", " thousand ", " million ", " billion " };
+            string[] TNumberWord = { "", " thousand ", " million ", " billion " };
             string result = "";
             Number_To_Text_Convertor NumConvertor = new Number_To_Text_Convertor(TNumberWord);
             Console.WriteLine("'q' for exit");
@@ -226,5 +226,31 @@
             }
         }
     
+    }
+}
+
+
+
+
+
+
+
+namespace NumberToTextConvertorTests
+{
+    [TestFixture]
+    public class ConvertorTests
+    {
+        [Test]
+        public void TestConvertor()
+        {
+            // Arrange
+            Number_To_Text_Convertor convertor = new Number_To_Text_Convertor();
+
+            // Act
+            string result = convertor.Convertor("10");
+
+            // Assert
+            Assert.AreEqual("ten", result); // Adjust expected output as needed
+        }
     }
 }
