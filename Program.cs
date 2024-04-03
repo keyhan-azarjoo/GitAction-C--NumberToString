@@ -4,7 +4,7 @@ namespace NumberToTextConvertorNamespace
 
     class Program
     {
-         static void Main(bool test = false)
+         static void Main()
         {
             string Number = "";
             string[] TNumberWord = { "", " thousand ", " million ", " billion " };
@@ -22,7 +22,7 @@ namespace NumberToTextConvertorNamespace
                     Console.WriteLine("Textual Number is : " + result);
                 }
             }
-            if( test == false){
+            return;
                 Console.WriteLine("*********************************************************************");
                 while(Number != "q"){
                     Console.WriteLine("\r\nPlease enter your Number : ");
@@ -32,7 +32,7 @@ namespace NumberToTextConvertorNamespace
                         Console.WriteLine("Textual Number is : " + result);
                     }
                 }
-            }
+            
         }
     }
 
