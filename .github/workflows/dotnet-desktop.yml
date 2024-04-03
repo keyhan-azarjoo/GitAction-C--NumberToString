@@ -31,7 +31,4 @@ jobs:
 
     - name: Test
       run: dotnet run true --no-restore --verbosity normal
-      
-    - name: finish test
-      run: |
-            q
+    
