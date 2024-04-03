@@ -29,7 +29,3 @@ jobs:
 
     - name: Test
       run: dotnet run --no-restore --verbosity normal
-  
-    
-
-      
