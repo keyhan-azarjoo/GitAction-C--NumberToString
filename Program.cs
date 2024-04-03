@@ -1,4 +1,5 @@
-﻿﻿namespace NumberToTextConvertorNamespace
+
+namespace NumberToTextConvertorNamespace
 {
 
     class Program
@@ -212,7 +213,7 @@
             //In this function, we perform the conversion of numbers ranging from 1 to 19.
             //These numbers are associated with distinct, non-repeating words in their representation.
             try{
-                string[] OneToNineteen = {"","one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
+                string[] OneToNineteen = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen" };
                 int Int_Num = Convert.ToInt16(num);
                 if(Int_Num > 19){
                     return "";
@@ -228,3 +229,10 @@
     
     }
 }
+
+
+
+
+
+
+
