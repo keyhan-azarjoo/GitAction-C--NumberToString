@@ -1,8 +1,8 @@
-name: CI
+name: CI     #### This is the name to describe what you are doing
 
-on:
+on:     #### These are the events that we want to run some scripts or actions based on them
   push:
-    branches:
+    branches:     #### TIt means that when you push something to the main or Ci-action branch this job will run
       - main
       - Ci-action
   pull_request:
@@ -10,16 +10,16 @@ on:
       - main
       - Ci-action
 
-jobs:
+jobs:     #### Jubs is a group of actions that will be executed when any of these events happen.     #### You can see the list of activities in this link: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v4     #### In any repo you need to check out the code first
 
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4
+    - name: Setup .NET Core    #### you can select an action that needs to be run. you can write your action or use a pre-wroten one on this link: https://github.com/actions. you can see their documentation 
+      uses: actions/setup-dotnet@v4     #### For running your code you need to run the environment first #### by using this code you can run a .NET Core environment to run your code on it.
       with:
         dotnet-version: '8.0.x'
 
@@ -27,8 +27,9 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore     #### Here we build the code
 
     - name: Test
-      run: dotnet run true --no-restore --verbosity normal
+      run: dotnet run true --no-restore --verbosity normal     ##### Here we run the code and test it
     
+ ##### Whenever we run an action we use 'uses' and whenever we run a command we use 'run'
