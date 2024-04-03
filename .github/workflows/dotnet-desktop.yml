@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      -Ci-action
+      - Ci-action
   pull_request:
     branches:
       - main
-      -Ci-action
+      - Ci-action
 
 jobs:
   build:
