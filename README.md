@@ -1,6 +1,6 @@
 # GitAction-C#-NumberToString
 
-
+ 
 
 Azure Pipelines and Git Actions are two powerful tools that can help automate your workflows, but what sets them apart?
 
@@ -33,9 +33,6 @@ Use the dotnet restore, dotnet build, and dotnet test commands to restore depend
 Push your changes to the main branch, and Git Actions will automatically trigger the workflow defined in your YAML file.
 
 Monitor the execution of your workflow on GitHub to ensure that your build and tests run successfully.
-
-Check out this simple sample of implementing Git Actions for a C# .NET project: 
-Link. 
 
 Start automating your workflow today and enjoy smoother and more reliable deployments! 🛠️💻
 
