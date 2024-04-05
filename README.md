@@ -34,9 +34,6 @@ Push your changes to the main branch, and Git Actions will automatically trigger
 
 Monitor the execution of your workflow on GitHub to ensure that your build and tests run successfully.
 
-Check out this simple sample of implementing Git Actions for a C# .NET project: 
-Link. 
-
 Start automating your workflow today and enjoy smoother and more reliable deployments! 🛠️💻
 
 
